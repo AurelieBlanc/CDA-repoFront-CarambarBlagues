@@ -1,0 +1,11 @@
+.banner {
+    background-color: #FFEF03; 
+    height: 300px; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+}
+
+.banner img {
+    width: 300px; 
+}

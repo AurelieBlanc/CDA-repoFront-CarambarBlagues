@@ -1,0 +1,30 @@
+.jokeDisplay {
+     background-color: #FFEF03;  
+     height: 500px; 
+     font-family: "Bangers", system-ui; 
+     color: #CC2229; 
+     display: flex; 
+     justify-content: center;
+     padding-top: 100px; 
+}
+
+.containerJD {
+    display: flex; 
+    flex-direction: column;
+}
+
+.containerJD button {
+    background-color: #F6F6D1; 
+    border-radius: 5px; 
+    width: 200px; 
+    height: 50px; 
+    font-family: "Bangers", system-ui;
+    color: #CC2229; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    box-shadow: 2px 2px 5px black; 
+}
+
+.containerJD p {
+    padding-top: 100px; 
+}

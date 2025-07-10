@@ -1,0 +1,14 @@
+.welcome {
+    font-family: "Bangers", system-ui; 
+    height: 50px; 
+    color: #CC2229; 
+    text-align: center; 
+    background-color: #F6F6D1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 1.2rem; 
+    letter-spacing: 0.5px;
+    border-top: black 2px solid; 
+    border-bottom: black 2px solid;
+}
