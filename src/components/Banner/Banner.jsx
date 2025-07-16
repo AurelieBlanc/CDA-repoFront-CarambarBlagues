@@ -4,7 +4,7 @@ import "./Banner.css"
 export default function Banner() {
   return (
     <div class="banner">
-        <img src="/Logo_Carambar.png" alt="logo Carambar" />
+        <img src={`${import.meta.env.BASE_URL}/Logo_Carambar.png`} alt="logo Carambar" />
     
     </div>
   )
