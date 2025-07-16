@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AurelieBlanc.github.io/CDA-repoBack-CarambarBlagues",
+  "homepage": "https://AurelieBlanc.github.io/CDA-repoFront-CarambarBlagues",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
