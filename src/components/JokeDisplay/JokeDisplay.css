@@ -8,12 +8,13 @@
      padding-top: 100px; 
 }
 
-.containerJD {
+.containerButtonAndJoke {
     display: flex; 
     flex-direction: column;
+    align-items: center;
 }
 
-.containerJD button {
+.containerButtonAndJoke button {
     background-color: #F6F6D1; 
     border-radius: 5px; 
     width: 200px; 
@@ -25,6 +26,23 @@
     box-shadow: 2px 2px 5px black; 
 }
 
-.containerJD p {
-    padding-top: 100px; 
+.jokeContainer {
+    padding-top: 60px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 20px; 
+    font-size: 1.6rem; 
+    text-align: center; 
+    width: 90%; 
+}
+
+@media (min-width: 1024px) {
+
+    .jokeContainer {
+    font-size: 2rem; 
+    text-align: center; 
+    width: 100%; 
+}
 }

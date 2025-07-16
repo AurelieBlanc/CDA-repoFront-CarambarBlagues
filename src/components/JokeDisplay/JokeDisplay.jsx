@@ -8,7 +8,11 @@ import { useState } from "react"
 
 export default function JokeDisplay() {
 // Déclaration  des states : 
-const [jokeRandomly, setJokeRandomly] = useState(""); 
+const [jokeRandomly, setJokeRandomly] = useState({
+  id:null, 
+  question:"", 
+  answer:""
+}); 
 
 
 // Fonction qui se déclenchera à chaque fois que l'on cliquera sur le bouton 
@@ -26,6 +30,7 @@ const [jokeRandomly, setJokeRandomly] = useState("");
 
       const data = await response.json(); 
       console.log("data retour en front", data)
+      setJokeRandomly(data); 
 
     } catch(error) {
       console.error("Erreur API : ", error.message)
@@ -34,17 +39,28 @@ const [jokeRandomly, setJokeRandomly] = useState("");
   }
 
   return (
-    <div class="jokeDisplay">
+    <div className="jokeDisplay">
       
-        <div class="containerJD">
+        <div className="containerButtonAndJoke">
             <button onClick={displayJoke}>
                 Teste-moi si tu l'oses ! 
             </button>
-
+         
+    {jokeRandomly?.id !== null && (
+      <div className="jokeContainer">
             <p>
-                Affichage de la blague aléatoire ici !
+               {jokeRandomly?.question}
             </p>
-        </div>
+            <p>
+               {jokeRandomly?.answer}
+            </p>
+      
+      </div>
+    )}  
+
+    </div>
+  
+       
     </div>
   )
 }
