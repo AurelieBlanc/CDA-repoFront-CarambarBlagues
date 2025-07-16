@@ -20,9 +20,9 @@ const [jokeRandomly, setJokeRandomly] = useState({
 
 
 
-    try {
+    try {  
 
-      const response = await fetch("http://localhost:3000/api/v1/jokes/random")
+      const response = await fetch("https://cda-repoback-carambarblagues.onrender.com/api/v1/jokes/random")
 
       if(!response.ok) {
         throw new Error (`erreur HTTP: ${response.status}`)
