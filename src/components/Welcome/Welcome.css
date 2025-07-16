@@ -1,14 +1,33 @@
 .welcome {
     font-family: "Bangers", system-ui; 
-    height: 50px; 
+    height: 70px; 
     color: #CC2229; 
     text-align: center; 
     background-color: #F6F6D1;
     display: flex; 
     justify-content: center; 
-    align-items: center; 
-    font-size: 1.2rem; 
-    letter-spacing: 0.5px;
+    align-items: center;    
     border-top: black 2px solid; 
     border-bottom: black 2px solid;
+}
+
+/* On code en mobile first :  */
+.welcome h1 { 
+    font-size: 1.2rem; 
+    letter-spacing: 0.8px;
+    width: 90%; 
+}
+
+@media (min-width: 1024px ) {
+
+    .welcome {
+        height: 50px; 
+    }
+
+    .welcome h1 {
+    font-size: 1.4rem; 
+    letter-spacing: 0.8px;
+    width: 90%; 
+}
+
 }
