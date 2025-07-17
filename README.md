@@ -43,4 +43,5 @@ https://cda-repoback-carambarblagues.onrender.com/api-docs/
 - Controller : Express (controllers/blagueController.js) : gère la logique métier et les requêtes HTTP
 - View : REACT (repo Front) : affiche les blagues et interagit avec l'utilisateur 
 
-
+### Notes pour le developpeur : 
+** pour le repo Front, si modif , pour remmetre à jour en ligne sur GitHub Pages: npm run deploy
