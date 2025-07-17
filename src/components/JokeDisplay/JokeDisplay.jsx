@@ -1,6 +1,8 @@
 // Import des modules nécessaires pour ce composant :  ----------------------//
 import "./JokeDisplay.css"; 
 import { useState } from "react"
+import { PiEyesFill } from "react-icons/pi"; // icone : <PiEyesFill />
+
 
 
 
@@ -13,6 +15,8 @@ const [jokeRandomly, setJokeRandomly] = useState({
   question:"", 
   answer:""
 }); 
+
+const [display, setDisplay] = useState(false); 
 
 
 // Fonction qui se déclenchera à chaque fois que l'on cliquera sur le bouton 
@@ -29,14 +33,22 @@ const [jokeRandomly, setJokeRandomly] = useState({
       }
 
       const data = await response.json(); 
-      console.log("data retour en front", data)
+      setDisplay(false); 
       setJokeRandomly(data); 
+      
 
     } catch(error) {
       console.error("Erreur API : ", error.message)
     }
 
   }
+
+  function displayAnswer() {
+    console.log("ca marche"); 
+    setDisplay (prev => !prev)
+    
+  }; 
+
 
   return (
     <div className="jokeDisplay">
@@ -51,9 +63,24 @@ const [jokeRandomly, setJokeRandomly] = useState({
             <p>
                {jokeRandomly?.question}
             </p>
-            <p>
+
+    {display ? (
+            <p className="answer">
                {jokeRandomly?.answer}
             </p>
+    ) : (
+          <p>
+              <button className="buttonAnswer"
+              onClick={displayAnswer}>
+                  <PiEyesFill className="iconeEye" size={22}
+                  /> 
+                  Voir la réponse
+              </button>
+          </p>
+    )
+
+            }
+
       
       </div>
     )}  

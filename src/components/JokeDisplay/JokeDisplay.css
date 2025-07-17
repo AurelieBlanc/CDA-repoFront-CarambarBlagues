@@ -38,6 +38,7 @@
     width: 90%; 
 }
 
+
 @media (min-width: 1024px) {
 
     .jokeContainer {
@@ -45,4 +46,21 @@
     text-align: center; 
     width: 100%; 
 }
+}
+
+.buttonAnswer {
+    margin-top: 20px;
+    padding-bottom: 3px; 
+}
+
+.answer {
+    padding-top: 25px; ;
+}
+
+.iconeEye {
+    display: inline-block; 
+    margin-right: 5px; 
+    position: relative; 
+    top: 3px; 
+    
 }
