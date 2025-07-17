@@ -44,4 +44,4 @@ https://cda-repoback-carambarblagues.onrender.com/api-docs/
 - View : REACT (repo Front) : affiche les blagues et interagit avec l'utilisateur 
 
 ### Notes pour le developpeur : 
-** pour le repo Front, si modif , pour remmetre à jour en ligne sur GitHub Pages: npm run deploy
+** pour le repo Front, si modif , pour remettre à jour en ligne sur GitHub Pages: npm run deploy
