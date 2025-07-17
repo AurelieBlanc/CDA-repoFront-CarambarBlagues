@@ -1,12 +1,46 @@
-# React + Vite
+# PROJET:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est une mini application web de blagues. Elle est composée d'une landing page avec un bouton qui à chaque clic, affichera de manière aléatoire une blague. Toutes les blagues proviennent d'une API versionnée.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Liens Utiles : 
 
-## Expanding the ESLint configuration
+** Démo en ligne : 
+https://aurelieblanc.github.io/CDA-repoFront-CarambarBlagues/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+** Repo Front-end (REACT) : 
+https://github.com/AurelieBlanc/CDA-repoFront-CarambarBlagues
+
+** Repo Back-end (Node/Express) / API : 
+https://github.com/AurelieBlanc/CDA-repoBack-CarambarBlagues
+
+** Documentation SWAGGER : 
+https://cda-repoback-carambarblagues.onrender.com/api-docs/
+
+# Fonctionnalités : 
+- Landing page avec un bouton pour afficher une blague aléatoire.
+- API REST avec 4 endpoints :
+  - Ajouter une blague (`POST`)
+  - Récupérer toutes les blagues (`GET`)
+  - Récupérer une blague par ID (`GET`)
+  - Récupérer une blague aléatoire (`GET`)
+- Blagues stockées dans une base SQLite.
+- App testée avec Postman.
+- API documentée avec Swagger.
+
+# STACK TECHNIQUE : 
+- Front-end : React, CSS
+- Déploiement Front : GitHub Pages
+- Back-end: Node.js, Express.js
+- ORM: Sequelize
+- Base de données : SQLite
+- Déploiement Back : render.com
+- Architecture : MVC
+- Documentation API via SWAGGER
+
+# Architecture MVC :
+- Model : Sequelize (models/Blague.js) : définit la structure de la base de données
+- Controller : Express (controllers/blagueController.js) : gère la logique métier et les requêtes HTTP
+- View : REACT (repo Front) : affiche les blagues et interagit avec l'utilisateur 
+
+
