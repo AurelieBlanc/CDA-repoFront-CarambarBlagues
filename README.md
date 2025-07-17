@@ -17,8 +17,20 @@ https://github.com/AurelieBlanc/CDA-repoBack-CarambarBlagues
 ** Documentation SWAGGER : 
 https://cda-repoback-carambarblagues.onrender.com/api-docs/
 
+# Fonctionnalités : 
+- Landing page avec un bouton pour afficher une blague aléatoire.
+- API REST avec 4 endpoints :
+  - Ajouter une blague (`POST`)
+  - Récupérer toutes les blagues (`GET`)
+  - Récupérer une blague par ID (`GET`)
+  - Récupérer une blague aléatoire (`GET`)
+- Blagues stockées dans une base SQLite.
+- App testée avec Postman.
+- API documentée avec Swagger.
 
 # STACK TECHNIQUE : 
+** Front-end** : React, CSS + déploiement sur GitHub Pages 
+** Back-end**: Node.js, Express.js
 - API versionnée
 - Création de 4 endpoints (TESTES via POSTMAN) :
   - pour ajouter une blague 
