@@ -29,21 +29,18 @@ https://cda-repoback-carambarblagues.onrender.com/api-docs/
 - API documentée avec Swagger.
 
 # STACK TECHNIQUE : 
-** Front-end** : React, CSS + déploiement sur GitHub Pages 
-** Back-end**: Node.js, Express.js
-- API versionnée
-- Création de 4 endpoints (TESTES via POSTMAN) :
-  - pour ajouter une blague 
-  - pour consulter TOUTES les blagues
-  - pour consulter une blague via son id
-  - pour consulter une blague de manière aléatoire
-- environnement Node, Express, Sequelize, SQLIte
-- Back déployé sur render.com
-- Front déployé via GitHub Pages
-- Approche MVC :
-   - Model : Sequelize (models/Blague.js) : définit la structure de la base de données
-   - Controller : Express (controllers/blagueController.js) : gère la logique métier et les requêtes HTTP
-   - View : REACT (repo Front) : affiche les blagues et interagit avec l'utilisateur 
-- API documentée via SWAGGER: https://cda-repoback-carambarblagues.onrender.com/api-docs/
+- Front-end : React, CSS
+- Déploiement Front : GitHub Pages
+- Back-end: Node.js, Express.js
+- ORM: Sequelize
+- Base de données : SQLite
+- Déploiement Back : render.com
+- Architecture : MVC
+- Documentation API via SWAGGER
+
+# Architecture MVC :
+- Model : Sequelize (models/Blague.js) : définit la structure de la base de données
+- Controller : Express (controllers/blagueController.js) : gère la logique métier et les requêtes HTTP
+- View : REACT (repo Front) : affiche les blagues et interagit avec l'utilisateur 
 
 
