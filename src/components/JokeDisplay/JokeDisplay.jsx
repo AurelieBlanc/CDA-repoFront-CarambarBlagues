@@ -58,11 +58,21 @@ const [display, setDisplay] = useState(false);
                 Teste-moi si tu l'oses ! 
             </button>
          
-    {jokeRandomly?.id !== null && (
-      <div className="jokeContainer">
+         <div className="jokeContainer">
+
+    {jokeRandomly?.id !== null ? (
+     
             <p>
                {jokeRandomly?.question}
             </p>
+            ) : (
+              <p>
+               En cours de chargement ...
+            </p>
+    )}
+
+
+
 
     {display ? (
             <p className="answer">
@@ -77,13 +87,11 @@ const [display, setDisplay] = useState(false);
                   Voir la réponse
               </button>
           </p>
-    )
+    )}
 
-            }
 
-      
-      </div>
-    )}  
+
+    </div>
 
     </div>
   
